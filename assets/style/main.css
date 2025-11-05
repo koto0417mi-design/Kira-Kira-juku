@@ -11,6 +11,7 @@ body {
     font-family: "Noto Sans JP", "poppins";
     line-height: 1.75;
     color: #333;
+    padding-top: 70px;
 }
 
 a {
@@ -219,7 +220,7 @@ li {
 }
 
 .btn-hero {
-    width: 380px;
+    width: 350px;
     height: 65px;
     align-items: center;
     justify-content: center;
@@ -256,12 +257,22 @@ li {
 /* カバー --------------------------------------------------------------- */
 
 .cover {
-    padding: 70px 0 0 0;
+    background-image: url(/assets/image/mainVIsual_sp.jpg);
+    width: 100%;
+    aspect-ratio: 390 / 250;
+    background-size: cover;
+    position: relative;
+    max-height: 294px;
 }
+
 
 @media (min-width: 768px) {
     .cover {
-        padding: 100px 0 80px 0;
+        background-image: url(/assets/image/mainVIsual_pc.jpg);
+        width: 100%;
+        aspect-ratio: 1920 / 800;
+        background-size: cover;
+        max-height: none;
     }
 }
 
@@ -271,9 +282,8 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    top: 104px;
-    left: 2px;
-    margin-left: 14px;
+    top: 20%;
+    left: 8%;
 }
 
 @media (min-width: 768px) {
@@ -423,16 +433,16 @@ li {
 }
 
 .btn-box-container {
-    padding: 17px 63px 12px 63px;
+    padding: 17px 20px 12px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 12px;
 }
 
 @media (min-width: 768px) {
     .btn-box-container {
-        padding: 150px 20px;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -516,7 +526,7 @@ li {
 /* ３つの特色 --------------------------------------------------------------- */
 
 .reason {
-    padding: 2px 20px;
+    padding: 20px 20px;
 }
 
 @media (min-width: 768px) {
@@ -526,7 +536,8 @@ li {
 }
 
 .reason-container {
-    max-width: 1080px;
+    max-width: 500px;
+    margin-inline: auto;
 }
 
 @media (min-width: 768px) {
@@ -736,8 +747,8 @@ li {
 }
 
 .course-container {
-    max-width: 1080px;
-    margin: 0 auto;
+    max-width: 500px;
+    margin-inline: auto;
     font-weight: 700;
 }
 
@@ -847,6 +858,7 @@ li {
 }
 
 .pc-only {
+    display: block;
     pointer-events: auto;
 }
 
@@ -867,24 +879,22 @@ li {
     }
 }
 
+.pc-only:hover .tab-content-item img{
+    transform: scale(1.2);
+}
+
 .tab-content-item img {
-    transition: transform .3s ease;
+    transition: transform .6s ease;
+    width: 100%;
+    height: 100%;
 }
-
-@media (min-width: 768px) {
-    .tab-content-item img:hover {
-        transform: scale(1.2);
-        cursor: pointer;
-    }
-}
-
 
 
 
 /* 料金 --------------------------------------------------------------- */
 
 .cost {
-    padding: 30px 32px 60px 15px;
+    padding: 30px 30px 60px 30px;
 
 
 }
@@ -955,7 +965,9 @@ td {
     font-weight: 900;
     color: #f23397;
     border-bottom: 1px solid #ccc;
-    padding: 5px 5px 7px 50px;
+    padding: 20px 20px 20px 20px;
+    text-align: center;
+    line-height: 1;
 }
 
 @media (min-width: 768px) {
@@ -978,63 +990,61 @@ td {
 
 /* よくあるご質問 --------------------------------------------------------------- */
 
-.qusstion {
+.question {
     padding: 20px;
 }
 
-.qusstion-container {
-    max-width: 1080px;
+.question-container {
+    display: flex;
+    flex-direction: column;
 }
 
 @media (min-width: 768px) {
-    .qusstion-container {
-        max-width: 1920px;
+    .question-container {
+        flex-direction: row;
     }
 }
 
-.box-bg {
-    background-image: url(../image/qa.jpg);
+.question-box {
+    max-height: 225px;
+    overflow: hidden;
+    position: relative;
+}
+
+.box-bg-faq {
+    background-image: url(../image/qa_sp.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     transition: transform .6s ease;
     width: 100%;
+    height: 100%;
 }
 
-box:hover .box-bg {
-    transform: scale(1.1);
+.box-bg-search {
+    background-image: url(../image/classrooms_sp.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform .6s ease;
+    width: 100%;
+    height: 100%;
+}
+
+.question-box:hover .box-bg-faq .box-bg-search {
+    transform: scale(1.2);
 }
 
 .question-text {
-    align-items: center;
     font-size: 22px;
     font-weight: 700;
     color: #fff;
-    display: flex;
-    justify-content: center;
+    top: 50%;
     left: 15px;
     position: absolute;
     z-index: 2;
+    transform: translateY(-50%);
 }
-
-.box::before {
-    background: rgba(0, 0, 0, .4);
-    bottom: 0;
-    content: "";
-    height: auto;
-    left: 0;
-    opacity: 0;
-    position: absolute;
-    transition: opacity .6s ease;
-    width: 100%;
-    z-index: 1;
-}
-
-box:hover::before {
-    opacity: 1;
-}
-
-
 
 /* フッター --------------------------------------------------------------- */
 
