@@ -70,7 +70,7 @@ li {
 }
 
 .header-logo img {
-    width: 100%;
+    width: 71%;
     padding: 0 0 0 15px;
 }
 
@@ -141,13 +141,14 @@ li {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    width: 100%;
 }
 
 @media (min-width: 768px) {
     .hamburger-nav {
         flex-direction: row;
         align-items: normal;
-        gap: 60px;
+        gap: 5vw;
     }
 }
 
@@ -181,7 +182,7 @@ li {
 @media (min-width: 768px) {
     .hamburger-nav-list li a {
         justify-items: flex-start;
-        font-size: 15px;
+        font-size: 16px;
         font-weight: 500;
         color: #333;
         padding: 0;
@@ -248,7 +249,7 @@ li {
 }
 
 .btn-hero:hover {
-    opacity: 0.9;
+    opacity: 0.5;
 }
 
 @media (min-width:768px) {
@@ -272,10 +273,6 @@ li {
         border-radius: 31px;
         transition: all 0.3s ease;
     }
-
-    .btn-hero:hover {
-        opacity: 0.6;
-    }
 }
 
 /* カバー --------------------------------------------------------------- */
@@ -287,8 +284,8 @@ li {
     background-size: cover;
     position: relative;
     max-height: 342px;
-    padding-top: 11%;
-    padding-inline: 8%;
+    padding-top: 9%;
+    padding-inline: 4%;
 }
 
 
@@ -465,12 +462,12 @@ li {
 
 
 .btn-box-container {
-    padding: 17px 20px 12px 20px;
+    padding: 23px 20px 5px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 7px;
+    gap: 12px;
 }
 
 @media (min-width: 768px) {
@@ -503,11 +500,6 @@ li {
     transition: all 0.3s ease;
 }
 
-.btn-green:hover {
-    background-color: #b9e497;
-    color: #dcf2cd;
-}
-
 .btn-orange {
     width: 250px;
     height: 48px;
@@ -521,12 +513,6 @@ li {
     border-radius: 33px;
     transition: all 0.3s ease;
 }
-
-.btn-orange:hover {
-    background-color: #fab47f;
-    color: #fce98f;
-}
-
 
 .btn-skyblue {
     width: 250px;
@@ -542,9 +528,10 @@ li {
     transition: all 0.3s ease;
 }
 
+.btn-green:hover,
+.btn-orange:hover,
 .btn-skyblue:hover {
-    background-color: #9ce3b6;
-    color: #c7efe8;
+    opacity: 0.5;
 }
 
 @media (min-width: 768px) {
@@ -564,7 +551,7 @@ li {
 /* ３つの特色 --------------------------------------------------------------- */
 
 .reason {
-    padding: 20px 20px;
+    padding: 10px 20px 20px 20px;
 }
 
 @media (min-width: 768px) {
@@ -589,6 +576,7 @@ li {
     font-size: 28px;
     font-weight: 700;
     text-align: center;
+    margin-bottom: 12px;
 }
 
 
@@ -637,7 +625,7 @@ li {
 @media (min-width: 768px) {
     .reason-img {
         margin-top: 10px;
-        width: 50%;
+        width: 49%;
     }
 }
 
@@ -660,12 +648,24 @@ li {
 
 @media (min-width: 768px) {
     .reason-item-content {
-        width: 50%;
+        width: 49%;
     }
 }
 
 .reason-item-:not(:last-child) {
-    margin-bottom: 33px;
+    margin-bottom: 40px;
+}
+
+@media (min-width:981px) {
+    .reason-item-:not(:last-child) {
+        margin-bottom: 55px;
+    }   
+}
+
+@media (min-width: 768px) {
+    .reason-item-:not(:last-child) {
+        margin-bottom: 80px;
+    }
 }
 
 .reason-item-content-point {
@@ -711,6 +711,12 @@ li {
 
 
 /* お問い合わせ --------------------------------------------------------------- */
+
+
+.form {
+    padding: 45px 15px 45px 15px;
+    background-color: rgba(255, 85, 85, 0.1);
+}
 
 @media (min-width: 768px) {
     .form {
@@ -761,10 +767,8 @@ li {
     transition: all 0.3s ease;
 }
 
-.btn-hero:hover {
-    background-color: #80add5;
-    color: #4084c0;
-
+.btn-hero-bule:hover {
+    opacity: 0.5;
 }
 
 @media (min-width: 768px) {
@@ -867,6 +871,10 @@ li {
     line-height: 1.65;
 }
 
+.tab-content-title:hover {
+    color: #0271e0;
+}
+
 /* タブ */
 .st-theme-basic {
     border: none;
@@ -908,13 +916,15 @@ li {
     background-color: unset !important;
 }
 
-.pc-only {
+.tab-content-item-link {
     display: block;
     pointer-events: auto;
+    overflow: hidden;
+    border-radius: 20px;
 }
 
 @media (min-width: 768px) {
-    .pc-only {
+    .tab-content-item-link {
         pointer-events: none;
     }
 }
@@ -930,7 +940,7 @@ li {
     }
 }
 
-.pc-only:hover .tab-content-item img {
+.tab-content-item-link:hover img {
     transform: scale(1.2);
 }
 
@@ -938,7 +948,6 @@ li {
     transition: transform .6s ease;
     width: 100%;
     height: 100%;
-    border-radius: 12px;
 }
 
 
@@ -1057,6 +1066,7 @@ td {
     height: 225px;
     overflow: hidden;
     position: relative;
+    width: 100%;
 }
 
 .box-bg-faq {
@@ -1071,7 +1081,6 @@ td {
 
 @media (min-width:768px) {
     .box-bg-faq {
-        width: 50%;
         background-image: url(../image/qa.jpg);
     }
 }
@@ -1088,12 +1097,15 @@ td {
 
 @media (min-width:768px) {
     .box-bg-search {
-        background-image: url(../image/classrooms.jpg) ;
-        width: 50%;
+        background-image: url(../image/classrooms.jpg);
     }
 }
 
-.question-box:hover .box-bg-faq .box-bg-search {
+.question-box:hover .box-bg-faq {
+    transform: scale(1.2);
+}
+
+.question-box:hover .box-bg-search {
     transform: scale(1.2);
 }
 
