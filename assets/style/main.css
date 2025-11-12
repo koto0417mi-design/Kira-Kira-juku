@@ -200,7 +200,7 @@ li {
     margin-right: 8px;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
     .bi-arrow-right-short {
         display: none;
     }
@@ -211,13 +211,11 @@ li {
     display: block;
     width: 100%;
     height: 1px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
-@media (min-width: 767px) {
-
-    /* リンクのhover色 */
-    .header-nav-list li a:hover {
+@media (min-width: 768px) {
+    .hamburger-nav-list:hover {
         color: #0271e0;
     }
 }
@@ -225,6 +223,7 @@ li {
 
 
 /* ボタン ----------------------------- */
+
 
 
 .hamburger-nav-btn {
