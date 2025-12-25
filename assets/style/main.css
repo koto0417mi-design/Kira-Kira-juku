@@ -773,12 +773,29 @@ li {
     transition: all 0.3s ease;
 }
 
-.btn-hero-bule:hover {
+.form-btn-orange {
+    width: 304px;
+    height: 74px;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: #f6aa00;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 35px;
+    transition: all 0.3s ease;
+}
+
+.btn-hero-bule:hover,
+.form-btn-orange:hover {
     opacity: 0.5;
 }
 
 @media (min-width: 768px) {
-    .btn-hero-bule {
+    .btn-hero-bule,
+    .form-btn-orange {
         width: 380px;
         height: 75px;
         font-size: 24px;
@@ -787,6 +804,21 @@ li {
     }
 }
 
+/* 修正 ------------------------------------------------------------------------ */
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+@media (min-width: 768px) {
+.form-box {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+}
 
 /* コース --------------------------------------------------------------- */
 
