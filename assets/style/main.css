@@ -796,7 +796,7 @@ li {
 @media (min-width: 768px) {
     .btn-hero-bule,
     .form-btn-orange {
-        width: 380px;
+        width: 320px;
         height: 75px;
         font-size: 24px;
         font-weight: 700;
@@ -816,7 +816,7 @@ li {
 .form-box {
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    gap: 25px;
 }
 }
 
