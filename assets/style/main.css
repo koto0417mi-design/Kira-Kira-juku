@@ -660,7 +660,7 @@ li {
 @media (min-width:981px) {
     .reason-item:not(:last-child) {
         margin-bottom: 35px;
-    }   
+    }
 }
 
 .reason-item-content-point {
@@ -706,13 +706,13 @@ li {
 .reason-item-content-down {
     font-weight: 400;
     font-size: 16px;
-    margin: 8px 2px 0 0 ;
+    margin: 8px 2px 0 0;
 }
 
 @media (min-width: 768px) {
-.reason-item-content-down {
-    padding: 15px 2px 0 0 ;
-}
+    .reason-item-content-down {
+        padding: 15px 2px 0 0;
+    }
 }
 
 
@@ -813,11 +813,11 @@ li {
 }
 
 @media (min-width: 768px) {
-.form-box {
-    display: flex;
-    flex-direction: row;
-    gap: 25px;
-}
+    .form-box {
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+    }
 }
 
 /* コース --------------------------------------------------------------- */
